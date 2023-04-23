@@ -15,6 +15,7 @@ function App(){
     setTodos((prevTodos) => {
       return [...prevTodos, {id: 1, name: name, completed: false }]; //prevTodos 前のタスクの状態に対して更新していく
     });
+    todoNameRef.current.value = null;
   };
   
 

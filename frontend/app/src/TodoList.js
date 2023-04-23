@@ -2,7 +2,8 @@ import React from 'react';
 import Todo from "./Todo";
 
 const TodoList = ({todos}) => {
-  return todos.map((todo) => <Todo todo={todo} key={todo}/>);
+  return todos.map((todo) => <Todo todo={todo} key={todo.name}/>);
 };
+//uuid　調べる
 
 export default TodoList
